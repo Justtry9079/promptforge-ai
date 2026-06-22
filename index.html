@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PromptForge AI</title>
+
+<style>
+
+body{
+background:#0b1220;
+font-family:Arial,sans-serif;
+color:white;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#111c33;
+padding:20px;
+border-radius:16px;
+margin-bottom:20px;
+border:1px solid #1f2b46;
+}
+
+h1{
+color:#4f8cff;
+}
+
+textarea,input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:none;
+margin-top:10px;
+background:#0f1729;
+color:white;
+}
+
+.aspect{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.aspect button{
+padding:10px 20px;
+border:none;
+border-radius:10px;
+background:#1e293b;
+color:white;
+}
+
+.generate{
+width:100%;
+padding:15px;
+background:#3b82f6;
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:bold;
+color:white;
+margin-top:20px;
+}
+
+#output{
+background:#111c33;
+padding:20px;
+border-radius:16px;
+min-height:300px;
+white-space:pre-wrap;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>PromptForge AI</h1>
+
+<div class="card">
+
+<h2>1. Provide Content</h2>
+
+<textarea placeholder="Paste your script here..."></textarea>
+
+<br><br>
+
+<input type="file">
+
+<br><br>
+
+<input type="number" placeholder="Number of Scenes">
+
+<br><br>
+
+<input type="text" placeholder="Niche / Topic">
+
+</div>
+
+<div class="card">
+
+<h2>2. Define Image Style</h2>
+
+<input type="file">
+
+<br><br>
+
+<input type="text"
+placeholder="cinematic, photorealistic, 4k">
+
+</div>
+
+<div class="card">
+
+<h2>3. Aspect Ratio</h2>
+
+<div class="aspect">
+<button>16:9</button>
+<button>9:16</button>
+<button>4:3</button>
+<button>3:4</button>
+<button>1:1</button>
+</div>
+
+<button class="generate">
+Generate Prompts
+</button>
+
+</div>
+
+<div id="output">
+
+Your generated prompts will appear here...
+
+</div>
+
+</body>
+</html>
